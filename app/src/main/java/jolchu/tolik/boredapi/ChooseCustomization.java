@@ -252,13 +252,13 @@ public class ChooseCustomization extends AppCompatActivity implements PopupMenu.
 
     public void Cancel(View view) {
         Toast.makeText(this, "Cancelled!", Toast.LENGTH_SHORT).show();
-        instructions.setVisibility(View.INVISIBLE);
-        min_range.setVisibility(View.INVISIBLE);
-        max_range.setVisibility(View.INVISIBLE);
-        min_percentage.setVisibility(View.INVISIBLE);
-        max_percentage.setVisibility(View.INVISIBLE);
-        save.setVisibility(View.INVISIBLE);
-        cancel.setVisibility(View.INVISIBLE);
+        instructions.setVisibility(View.VISIBLE);
+        min_range.setVisibility(View.VISIBLE);
+        max_range.setVisibility(View.VISIBLE);
+        min_percentage.setVisibility(View.VISIBLE);
+        max_percentage.setVisibility(View.VISIBLE);
+        save.setVisibility(View.VISIBLE);
+        cancel.setVisibility(View.VISIBLE);
         progress_recipient = "";
     }
 
