@@ -172,7 +172,7 @@ public class MainScreen extends AppCompatActivity {
 
     public void LoadAnotherActivityFAB(View view) {
         requestQueue = Volley.newRequestQueue(this);
-        if (Activity.getText().toString().equals("Your Activity Will be Generated Here!"))
+        if (Activity.getText().toString().equals("Ваша активность будет генерироваться здесь!"))
             LoadURL(randomUrl);
         else
             LoadURL(url);
@@ -187,11 +187,11 @@ public class MainScreen extends AppCompatActivity {
 
     public void AddedToFavourites(View view) {
         if (database.favouritesDao().FindKey(key) > 0) {
-            Toast.makeText(this, "Already in Favourites!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Уже в избранном!", Toast.LENGTH_SHORT).show();
             return;
         }
         database.favouritesDao().AddFavourite(key, Activity.getText().toString());
-        Toast.makeText(this, "Added to favourites", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Добавлено в избранное", Toast.LENGTH_SHORT).show();
     }
 
 }

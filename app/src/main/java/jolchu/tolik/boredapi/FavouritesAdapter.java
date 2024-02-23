@@ -33,13 +33,13 @@ public class FavouritesAdapter extends RecyclerView.Adapter<FavouritesAdapter.Fa
         return FavouritesList.size();
     }
 
-    public ActivityObject getActivityDeleteAt(int position){
-        ActivityObject activityObject =  FavouritesList.get(position);
+    public ActivityObject getActivityDeleteAt(int position) {
+        ActivityObject activityObject = FavouritesList.get(position);
         FavouritesList.remove(position);
         return activityObject;
     }
 
-    public static class FavouritesViewHolder extends RecyclerView.ViewHolder{
+    public static class FavouritesViewHolder extends RecyclerView.ViewHolder {
 
         public LinearLayout linearLayout;
         public TextView textView;
