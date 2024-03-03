@@ -50,7 +50,7 @@ public class ChooseCustomization extends AppCompatActivity implements PopupMenu.
         Window window = ChooseCustomization.this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        window.setStatusBarColor(ContextCompat.getColor(ChooseCustomization.this, R.color.colorPrimary));
+        window.setStatusBarColor(ContextCompat.getColor(ChooseCustomization.this, R.color.white));
     }
 
     public void type_menu_button(View view) {

@@ -56,7 +56,7 @@ public class MainScreen extends AppCompatActivity {
         Window window = MainScreen.this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        window.setStatusBarColor(ContextCompat.getColor(MainScreen.this, R.color.colorPrimary));
+        window.setStatusBarColor(ContextCompat.getColor(MainScreen.this, R.color.white));
 
         Activity = findViewById(R.id.editTextTextMultiLine);
         GenerateActivity = findViewById(R.id.GetRandomActivity);

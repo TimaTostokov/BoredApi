@@ -24,7 +24,7 @@ public class Favourites extends AppCompatActivity {
         Window window = Favourites.this.getWindow();
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        window.setStatusBarColor(ContextCompat.getColor(Favourites.this, R.color.colorPrimary));
+        window.setStatusBarColor(ContextCompat.getColor(Favourites.this, R.color.white));
 
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
