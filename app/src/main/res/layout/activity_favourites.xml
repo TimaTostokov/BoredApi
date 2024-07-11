@@ -27,6 +27,7 @@
         android:backgroundTint="@color/colorPrimaryDark"
         android:onClick="GoBackHome"
         android:src="@drawable/ic_home"
-        app:layout_anchor="@id/bottom_bar" />
+        app:layout_anchor="@id/bottom_bar"
+        tools:ignore="ContentDescription" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

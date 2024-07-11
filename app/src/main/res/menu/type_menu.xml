@@ -3,38 +3,38 @@
 
     <item
         android:id="@+id/item1"
-        android:title="Education" />
+        android:title="@string/education" />
 
     <item
         android:id="@+id/item2"
-        android:title="Recreational" />
+        android:title="@string/recreational" />
 
     <item
         android:id="@+id/item3"
-        android:title="Social" />
+        android:title="@string/social" />
 
     <item
         android:id="@+id/item4"
-        android:title="DIY" />
+        android:title="@string/diy" />
 
     <item
         android:id="@+id/item5"
-        android:title="Charity" />
+        android:title="@string/charity" />
 
     <item
         android:id="@+id/item6"
-        android:title="Cooking" />
+        android:title="@string/cooking" />
 
     <item
         android:id="@+id/item7"
-        android:title="Relaxation" />
+        android:title="@string/relaxation" />
 
     <item
         android:id="@+id/item8"
-        android:title="Music" />
+        android:title="@string/music" />
 
     <item
         android:id="@+id/item9"
-        android:title="Busywork" />
+        android:title="@string/busywork" />
 
 </menu>

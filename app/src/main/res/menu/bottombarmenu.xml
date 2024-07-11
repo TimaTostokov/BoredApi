@@ -5,13 +5,13 @@
     <item
         android:id="@+id/favourites"
         android:icon="@drawable/ic_star_filled"
-        android:title="Favourites"
+        android:title="@string/favourites"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/customize"
         android:icon="@drawable/ic_settings"
-        android:title="Customize"
+        android:title="@string/customize"
         app:showAsAction="ifRoom" />
 
 </menu>

@@ -3,22 +3,22 @@
 
     <item
         android:id="@+id/p1"
-        android:title="Alone" />
+        android:title="@string/alone" />
 
     <item
         android:id="@+id/p2"
-        android:title="2 People" />
+        android:title="@string/_2_people" />
 
     <item
         android:id="@+id/p3"
-        android:title="3 People" />
+        android:title="@string/_3_people" />
 
     <item
         android:id="@+id/p4"
-        android:title="4 People" />
+        android:title="@string/_4_people" />
 
     <item
         android:id="@+id/p5"
-        android:title="More than 4 People" />
+        android:title="@string/more_than_4_people" />
 
 </menu>
