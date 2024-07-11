@@ -44,7 +44,7 @@ public class MainScreen extends AppCompatActivity {
     private String url;
     private final String randomUrl = "https://www.boredapi.com/api/activity";
     private RequestQueue requestQueue;
-    private DecimalFormat df = new DecimalFormat("0.00");
+    private final DecimalFormat df = new DecimalFormat("0.00");
     public static FavouritesDatabase database;
     private int key;
 

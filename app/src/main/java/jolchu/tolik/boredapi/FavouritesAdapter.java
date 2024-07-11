@@ -19,7 +19,7 @@ public class FavouritesAdapter extends RecyclerView.Adapter<FavouritesAdapter.Fa
         return new FavouritesViewHolder(view);
     }
 
-    private List<ActivityObject> FavouritesList = MainScreen.database.favouritesDao().GetAllFavourites();
+    private final List<ActivityObject> FavouritesList = MainScreen.database.favouritesDao().GetAllFavourites();
 
     @Override
     public void onBindViewHolder(@NonNull FavouritesViewHolder holder, int position) {

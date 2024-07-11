@@ -29,7 +29,7 @@ public class ChooseCustomization extends AppCompatActivity implements PopupMenu.
     private Double min_progress = 0.00;
     private Double max_progress = 0.00;
     private String progress_recipient;
-    private DecimalFormat df = new DecimalFormat("0");
+    private final DecimalFormat df = new DecimalFormat("0");
 
     String type_selected;
     Integer participants = -1;
@@ -94,7 +94,7 @@ public class ChooseCustomization extends AppCompatActivity implements PopupMenu.
         }
         else Toast.makeText(this, "Cancelled", Toast.LENGTH_SHORT).show();
 
-        if (!type_selected.equals("")) {
+        if (!type_selected.isEmpty()) {
             PassTypeOptionIntent(type_selected);
         }
 
@@ -125,8 +125,6 @@ public class ChooseCustomization extends AppCompatActivity implements PopupMenu.
         finish();
     }
 
-    @Override
-    public void onPointerCaptureChanged(boolean hasCapture) {}
     public void CostButton(View view) {
         instructions.setText(R.string.cost_slider_desc);
         progress_recipient = "cost";

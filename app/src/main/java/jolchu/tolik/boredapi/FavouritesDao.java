@@ -19,5 +19,5 @@ public interface FavouritesDao {
     int FindKey(int key);
 
     @Delete
-    int DeleteFavourite(ActivityObject activityObject);
+    void DeleteFavourite(ActivityObject activityObject);
 }

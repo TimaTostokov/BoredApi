@@ -1,16 +1,17 @@
 package jolchu.tolik.boredapi;
 
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 
 public class Favourites extends AppCompatActivity {
 
@@ -43,12 +44,13 @@ public class Favourites extends AppCompatActivity {
             return false;
         }
 
+        @SuppressLint("NotifyDataSetChanged")
         @Override
         public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
 
             int position = viewHolder.getAdapterPosition();
 
-            switch (direction){
+            switch (direction) {
                 case ItemTouchHelper.LEFT:
                 case ItemTouchHelper.RIGHT:
                     MainScreen.database.favouritesDao().DeleteFavourite(adapter.getActivityDeleteAt(position));
@@ -59,7 +61,7 @@ public class Favourites extends AppCompatActivity {
         }
     };
 
-    public void GoBackHome(View view){
+    public void GoBackHome(View view) {
         onBackPressed();
     }
 
